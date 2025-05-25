@@ -33,7 +33,7 @@ int main()
     world[3].name = "bedroom";
     world[3].door.push_back(0);
     world[3].things.push_back({ "T-shirt" });
-       
+         
     struct {
         int location;
     } player;
