@@ -8,6 +8,7 @@ int main()
     struct items {
         std::string name;
     };
+
     struct locations {
         std::string name;
         std::vector<int> door;
@@ -54,7 +55,7 @@ int main()
         if (input == "go")
         {
 
-            for (int i = 0;i < world[player.location].door.size();i++)
+            for (int i = 0; i < world[player.location].door.size();i++)
             {
                 int dst = world[player.location].door[i];
                 std::cout << i << ". " << world[dst].name << "\n";
